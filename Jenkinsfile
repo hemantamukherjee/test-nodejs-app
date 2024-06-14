@@ -29,6 +29,9 @@ pipeline {
       success {
            sh 'echo "i will always get executed"'
       }
+     always {
+           sh 'echo "i will always get executed"'
+      }
      
    }
    }
