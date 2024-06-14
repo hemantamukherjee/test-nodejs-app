@@ -6,7 +6,7 @@ pipeline {
    
      stage('Install Dependencies') { 
         steps { 
-           sh 'echo "install"' 
+           sh "npm install"' 
         }
      }
      
@@ -24,5 +24,11 @@ pipeline {
      }
   
    	}
-
+   
+   post{
+      always {
+           sh 'echo "i will always get executed"'
+      }
+     
+   }
    }
