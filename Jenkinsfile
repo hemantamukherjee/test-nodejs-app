@@ -26,7 +26,7 @@ pipeline {
    	}
    
    post{
-      always {
+      success {
            sh 'echo "i will always get executed"'
       }
      
