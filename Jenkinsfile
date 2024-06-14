@@ -4,7 +4,7 @@ pipeline {
 
    stages {
    
-     stage('Install Dependencies') { 
+     stage(' Dependencies') { 
         steps { 
            sh 'echo "testing application..."'
         }
